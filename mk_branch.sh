@@ -17,7 +17,7 @@ fi
 
 # Github Issue URL 생성.
 GITHUB_ID="iksadNorth"
-GITHUB_PJT="Simpluencer"
+GITHUB_PJT="Simpluencer-CI-Lab"
 ISSUE_URL="https://github.com/${GITHUB_ID}/${GITHUB_PJT}/issues/${ISSUE_ID}"
 echo "ISSUE_URL: $ISSUE_URL"
 
