@@ -19,7 +19,7 @@ jobs:
 
     - name: Set .env As Env Var
       run: |
-        git clone https://github.com/iksadNorth/Simpluencer_Env
+        git clone https://github.com/iksadNorth/Simpluencer_Env.git
         source ./Simpluencer_Env/set_env_var.sh .env
         echo $EMAIL_USERNAME
 
