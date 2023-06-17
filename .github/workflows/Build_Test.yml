@@ -11,16 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Login Git
-      run: |
-        git config --global credential.helper store
-        git config --global user.name ${{ secrets.GIT_USERNAME }}
-        git config --global user.password ${{ secrets.GIT_PASSWORD }}
+    - name: Copy Env Var Repo
+      uses: actions/checkout@v3
+      with:
+        repository: iksadNorth/Simpluencer_Env
 
     - name: Set .env As Env Var
       run: |
-        git clone https://github.com/iksadNorth/Simpluencer_Env.git
-        source ./Simpluencer_Env/set_env_var.sh .env
+        source ./set_env_var.sh .env
         echo $EMAIL_USERNAME
 
     - name: Copy Sources
