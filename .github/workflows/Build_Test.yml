@@ -15,6 +15,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: iksadNorth/Simpluencer_Env
+        ref: main
 
     - name: Set .env As Env Var
       run: |
