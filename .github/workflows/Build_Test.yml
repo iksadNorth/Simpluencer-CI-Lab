@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set .env As Env Var
+      run: |
+        git clone https://github.com/iksadNorth/Simpluencer_Env
+        source ./Simpluencer_Env/set_env_var.sh .env
+        echo $EMAIL_USERNAME
+
     - name: Copy Sources
       uses: actions/checkout@v3
 
